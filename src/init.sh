@@ -33,6 +33,7 @@ mv /tmp/src/authorized_keys /root/.ssh/authorized_keys
 chmod 700 /root/.ssh/authorized_keys
 # ssh config file
 mv -f /tmp/src/ssh/* /etc/ssh
+chmod 600 /etc/ssh/ssh_host_*_key
 
 # screen config
 mv -f /tmp/src/.screenrc /root/.screenrc
