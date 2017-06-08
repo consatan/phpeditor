@@ -9,8 +9,8 @@ export ZSH=$HOME/.oh-my-zsh
 # See https://github.com/robbyrussell/oh-my-zsh/wiki/Themes
 ZSH_THEME="lambda-mod"
 
-# autoload -U promptinit; promptinit
-# prompt adam2
+autoload -U promptinit; promptinit
+prompt adam2
 
 # tar -czf 的时候会自动生成 ._file 的文件，开启此选项禁止
 export COPYFILE_DISABLE=true

@@ -7,7 +7,7 @@ apt-get upgrade -y -q
 # install base command
 apt-get install -y --no-install-recommends vim vim-nox tree less screen git rsync xmlstarlet locales python \
     net-tools openssh-server aptitude sudo curl wget ftp php-cli php-dom php-zip php-mbstring php-curl \
-    default-mysql-client ctags cscope zsh apt-utils
+    default-mysql-client ctags cscope zsh dialog apt-utils
 
 # set default locale
 mv -f /tmp/src/locale /etc/default/locale
@@ -31,8 +31,8 @@ chmod 600 /root/.ssh
 touch /root/.ssh/config
 mv /tmp/src/authorized_keys /root/.ssh/authorized_keys
 chmod 700 /root/.ssh/authorized_keys
-# ssh config
-mv -f /tmp/src/sshd_config /etc/ssh/sshd_config
+# ssh config file
+mv -f /tmp/src/ssh/* /etc/ssh
 
 # screen config
 mv -f /tmp/src/.screenrc /root/.screenrc
