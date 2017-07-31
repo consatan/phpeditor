@@ -7,7 +7,7 @@ apt-get upgrade -y -q
 # install base command
 apt-get install -y --no-install-recommends vim vim-nox tree less screen git rsync xmlstarlet locales python \
     net-tools openssh-server aptitude sudo curl wget ftp php-cli php-dom php-zip php-mbstring php-curl \
-    default-mysql-client ctags cscope zsh dialog apt-utils
+    default-mysql-client ctags cscope zsh dialog apt-utils silversearcher-ag
 
 # set default locale
 mv -f /tmp/src/locale /etc/default/locale
